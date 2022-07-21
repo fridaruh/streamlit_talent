@@ -1,4 +1,3 @@
-https://raw.githubusercontent.com/fridaruh/dashboard_streamlit/master/income.csv
 
 import streamlit as st
 import pandas as pd
