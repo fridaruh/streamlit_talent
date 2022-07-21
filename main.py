@@ -7,13 +7,13 @@ from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, confusion_matrix
 
-siteHeader = st.beta_container()
+siteHeader = st.container()
 with siteHeader:
     st.title('Modelo de evaluación de ingresos')
     st.markdown(""" En este proyecto se busca encontrar cuáles son las características 
     principales que pueden predecir que una persona gane más o menos de $50 K anuales.""")
 
-dataExploration = st.beta_container()
+dataExploration = st.container()
 with dataExploration:
     st.header('Dataset: Ingresos')
     st.text("""Este dataset corresponde a una transformación del set de datos oficial proveniente del
@@ -32,7 +32,7 @@ st.bar_chart(distribution_sex)
 
 st.text('Con esta gráfica buscamos mostrar la distribución de los datos con respecto al sexo.')
 
-newFeatures = st.beta_container()
+newFeatures = st.container()
 with newFeatures:
     st.header('Nuevas variables: ')
     st.text('Demos un vistazo a las principales variables de este dataset: ')
@@ -40,7 +40,7 @@ with newFeatures:
 st.markdown('* **first feature:** this is the explanation') 
 st.markdown('* **second feature:** another explanation')
 
-modelTraining = st.beta_container()
+modelTraining = st.container()
 with modelTraining:
     st.header('Entrenamiento del modelo')
     st.text('En esta sección puedes hacer una selección de los hiperparámetros del modelo.')
